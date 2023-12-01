@@ -3,6 +3,7 @@
     include '../template/quickHTML.php';
     include '../include/functionSession.php';
     session_start();
+    #fix interaction below
     if(isset($_SESSION['gameName'])){
         echo '<script type="text/javascript">
             window.onload = function(){alert("Old Scores Detected. Submitting Now.");}
